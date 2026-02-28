@@ -1,0 +1,8 @@
+# Ignore everything inside model_training/env recursively
+model_training/env/**
+
+# Ignore the website .env file (sensitive credentials)
+website/.env
+
+# Ignore all node_modules in website recursively
+website/node_modules/** 
