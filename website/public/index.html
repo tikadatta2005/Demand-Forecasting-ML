@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Insight | PredictAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">Predict<span>AI</span></div>
+        <ul class="nav-links">
+          <li><a href="#about">Platform</a></li>
+          <li><a href="#predict">Forecasting</a></li>
+          <li><a href="#documentation">API</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="badge">Engine v3.4 Live</div>
+        <h1>Smart Inventory <br /><span>Demand Forecasting</span></h1>
+        <p>
+          Eliminate food waste and optimize stock levels with 87.76% predictive
+          accuracy. Transform historical sales into future-proof procurement
+          strategies.
+        </p>
+      </div>
+    </header>
+
+    <section id="about" class="brief">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <h4>Seasonality Aware</h4>
+            <p>Adjusts for holidays, weekends, and regional food trends.</p>
+          </div>
+          <div class="feature-item">
+            <h4>SKU Intelligence</h4>
+            <p>
+              Deep-learning analysis per individual menu item or grocery SKU.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h4>Waste Reduction</h4>
+            <p>
+              Average 18% reduction in perishable spoilage for retail partners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="predict" class="form-section">
+      <div class="container">
+        <div class="form-card">
+          <h3>Prediction Parameters</h3>
+          <form id="predictionForm">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="monthSelect">Month</label>
+                <select id="monthSelect" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6">July</option>
+                  <option value="7">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="daySelect">Day</label>
+                <select id="daySelect" required>
+                  <option value="" disabled selected>--</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group custom-select-wrapper">
+              <label for="itemSearch">Item Name</label>
+              <input
+                type="text"
+                id="itemSearch"
+                placeholder="Start typing to filter..."
+                autocomplete="off"
+                required
+              />
+              <div id="dropdownList" class="dropdown-content"></div>
+              <input type="hidden" id="selectedItemId" />
+            </div>
+
+            <button type="submit" class="btn-submit">Run Prediction</button>
+          </form>
+          <div id="result" class="result-message"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Prediction Model Interface. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  >
+</html>
