@@ -62,7 +62,7 @@ const server = async () => {
       }
     });
 
-    await f.listen({ port: 3000 });
+    await f.listen({ port: 3000,   host: "0.0.0.0" });
   } catch (error) {
     f.log.error(error);
   }
